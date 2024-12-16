@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+
+<body>
+    <audio id="sound1" src="sound1.mp3" preload="auto"></audio>
+    <audio id="sound2" src="sound2.mp3" preload="auto"></audio>
+
+    <div class="calculator">
+        <div class="calculator-screen" id="screen">0</div>
+        <div class="button-row">
+            <button onclick="playSound('sound1'); handleInput('AC')" class="button special">AC</button>
+            <button onclick="playSound('sound1'); handleInput('C')" class="button special">C</button>
+            <button onclick="playSound('sound1'); handleInput('%')" class="button operation">%</button>
+            <button onclick="playSound('sound1'); handleInput('/')"
+                class="button operation">/</button>
+        </div>
+        <div class="button-row">
+            <button onclick="playSound('sound1'); handleInput('7')" class="button">7</button>
+            <button onclick="playSound('sound1'); handleInput('8')" class="button">8</button>
+            <button onclick="playSound('sound1'); handleInput('9')" class="button">9</button>
+            <button onclick="playSound('sound2'); handleInput('*')" class="button operation">*</button>
+        </div>
+        <div class="button-row">
+            <button onclick="playSound('sound1'); handleInput('4')" class="button">4</button>
+            <button onclick="playSound('sound1'); handleInput('5')" class="button">5</button>
+            <button onclick="playSound('sound1'); handleInput('6')" class="button">6</button>
+            <button onclick="playSound('sound2'); handleInput('-')" class="button operation">-</button>
+        </div>
+        <div class="button-row">
+            <button onclick="playSound('sound1'); handleInput('1')" class="button">1</button>
+            <button onclick="playSound('sound1'); handleInput('2')" class="button">2</button>
+            <button onclick="playSound('sound1'); handleInput('3')" class="button">3</button>
+            <button onclick="playSound('sound2'); handleInput('+')" class="button operation">+</button>
+        </div>
+        <div class="button-row">
+            <button onclick="playSound('sound1'); handleInput('00')" class="button">00</button>
+            <button onclick="playSound('sound1'); handleInput('0')" class="button">0</button>
+            <button onclick="playSound('sound1'); handleInput('.')" class="button">.</button>
+            <button onclick="playSound('sound2'); handleInput('=')" class="button special">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript -->
+</body>
+
+</html>
